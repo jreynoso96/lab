@@ -10,7 +10,7 @@ class Account:
         self.__account_name = name
         self.__account_balance = 0
 
-    def deposit(self, amount: str) -> bool:
+    def deposit(self, amount: float) -> bool:
         '''
         This method will deposit money into the account. If the amount is negative or zero, it will return False and nothing will happen.
         If the amount is greater than zero, it will add to the account balance
@@ -24,7 +24,7 @@ class Account:
         else:
             return False
 
-    def withdraw(self, amount: str) -> bool:
+    def withdraw(self, amount: float) -> bool:
         '''
         This method will withdraw money from the account. If the amount being withdrawn is negative or greater than the balance of the account then nothing will happen.
         Otherwise the amount that is being withdrawn will subtracted from the account balance.
